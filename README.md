@@ -40,4 +40,5 @@ Required environment variables:
 ### Running News Fetch
 ```bash
 rails news_fetch:all_countries
+
 ```
