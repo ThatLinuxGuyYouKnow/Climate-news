@@ -18,7 +18,7 @@ Carbon Zero is a Rails-based news aggregation project focused on collecting and 
 - Rake Task: `news_fetch:all_countries`
 
 ## Requirements
-- Ruby (version recommended)
+- Ruby (3.+)
 - Rails
 - NewsAPI Key
 - Supabase Account
