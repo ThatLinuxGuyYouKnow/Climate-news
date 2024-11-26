@@ -1,24 +1,43 @@
-# README
+# Carbon Zero News Aggregator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project Overview
+Carbon Zero is a Rails-based news aggregation project focused on collecting and storing environmental and climate-related news articles from around the world.
 
-Things you may want to cover:
+## Current Status
+🚧 **Work in Progress** 🚧
 
-* Ruby version
+### Features
+- Fetches top environmental news articles from multiple countries
+- Uses NewsAPI for retrieving articles
+- Stores articles in Supabase database
+- Supports batch news retrieval across 53 countries
 
-* System dependencies
+### Technical Components
+- News Fetching Service: `NewsFetcherService`
+- Background Job: `NewsFetchJob`
+- Rake Task: `news_fetch:all_countries`
 
-* Configuration
+## Requirements
+- Ruby (version recommended)
+- Rails
+- NewsAPI Key
+- Supabase Account
 
-* Database creation
+## Setup
 
-* Database initialization
+### Environment Variables
+Required environment variables:
+- `NEWS_API_KEY`: NewsAPI authentication key
+- `SUPABASE_URL`: Your Supabase project URL
+- `SUPABASE_API_KEY`: Supabase API key
 
-* How to run the test suite
+### Installation
+1. Clone the repository
+2. Run `bundle install`
+3. Set up environment variables
+4. Run database migrations
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Running News Fetch
+```bash
+rails news_fetch:all_countries
+```
