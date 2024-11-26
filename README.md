@@ -1,4 +1,4 @@
-# Carbon Zero News Aggregator
+# Carbon Zero: A climate News Aggregator
 
 ## Project Overview
 Carbon Zero is a Rails-based news aggregation project focused on collecting and storing environmental and climate-related news articles from around the world.
